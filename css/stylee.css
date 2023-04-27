@@ -1,0 +1,872 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "segoe ui light";
+    height: 1000px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgs {
+    display: flex;
+}
+.img-1 , .img-2 , .img-3 {
+    width: 33.33%;
+}
+
+.img-1 img {
+    width: 100%;
+}
+.img-2 img {
+    width: 100%;
+}
+ .img-3 img {
+    width: 100%;
+}
+
+
+/**************************** navbar *******************/
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 22;
+}
+
+.navbar .logo {
+    width: 30%;
+    float: left;
+}
+
+.navbar .navs {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navs ul {
+    overflow: hidden;
+    float: right;
+}
+
+.navbar .navs ul li {
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+.navbar .navs ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.logo h2 {
+    margin: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navs ul li:hover {
+    background-color: #20c997;
+}
+
+
+/**************************  home section 1 *******************/
+
+.home {
+    background-image: url(imges/intro-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 99vh;
+    position: relative;
+}
+
+.home .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.home .caption {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.home .overlay .caption span {
+    font: 40px bold;
+    margin: 30px;
+}
+
+.home .overlay .caption h3 {
+    font: 70px ;
+}
+
+.home .overlay .caption h2 {
+    color: #fff;
+    font-size: 62px;
+    font-weight: 600;
+    position: relative;
+}
+
+.home .overlay .caption h2::before {
+    content: "|";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    animation-name: caption;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes caption {
+    0%{
+        content: "I|";
+    }
+    1% {
+        content: "I'm|";
+    }
+    2% {
+        content: "I'm S|";
+    }
+    3% {
+        content: "I'm si|";
+    }
+    4% {
+        content: "I'm sim|";
+    }
+    5% {
+        content: "I'm simo|";
+    }
+    6% {
+        content: "I'm simon|";
+    }
+    7% {
+        content: "I'm simoe|";
+    }
+    8% {
+        content: "I'm simoe o|";
+    }
+    9% {
+        content: "I'm simoe ol|";
+    }
+    10% {
+        content: "I'm simoe oli|";
+    }
+    11% {
+        content: "I'm simoe oliv|";
+    }
+    12% {
+        content: "I'm simoe olivi|";
+    }
+    13% {
+        content: "I'm simoe olivia|";
+    }
+    14% {
+        content: "I'm simoe olivia";
+    }
+    15% {
+        content: "I'm simoe olivia|";
+    }
+    16% {
+        content: "I'm simoe olivia";
+    }
+    17% {
+        content: "I'm simoe olivia|";
+    }
+    18% {
+        content: "I'm simoe olivi|";
+    }
+    19% {
+        content: "I'm simoe oliv|";
+    }
+    20% {
+        content: "I'm simoe oli|";
+    }
+    21% {
+        content: "I'm simoe ol|";
+    }
+    22% {
+        content: "I'm simoe o|";
+    }
+    23% {
+        content: "I'm simoe |";
+    }
+    24% {
+        content: "I'm simoe |";
+    }
+    25% {
+        content: "I'm simo|";
+    }
+    26% {
+        content: "I'm sim|";
+    }
+    27% {
+        content: "I'm si|";
+    }
+    28% {
+        content: "I'm s|";
+    }
+    29% {
+        content: "I'm |";
+    }
+    30% {
+        content: "I'm a|";
+    }
+    31% {
+        content: "I'm a f|";
+    }
+    32% {
+        content: "I'm a fr|";
+    }
+    33% {
+        content: "I'm a fre|";
+    }
+    34% {
+        content: "I'm a free|";
+    }
+    35% {
+        content: "I'm a freel|";
+    }
+    36% {
+        content: "I'm a freela|";
+    }
+    37% {
+        content: "I'm a freelan|";
+    }
+    38% {
+        content: "I'm a freelanc|";
+    }
+    39% {
+        content: "I'm a freelance|";
+    }
+    39% {
+        content: "I'm a freelancer|";
+    }
+}
+
+.home .overlay .caption p {
+    font: 20px bold;
+    font: 20px bold;
+}
+
+.home .overlay .caption button {
+    border-radius: 20px;
+    border: 1px solid #20c997;
+    padding: 20px;
+    margin: 55px;
+    background-color: transparent;
+    color: #20c997;
+    font: 16px;
+}
+/* Start Components */
+.special-heading {
+    color: #ebeced;
+    font-size: 150px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: -5;
+    margin: 0;
+}
+
+.special-heading + h1 {
+    margin: -60px 0 0;
+    font-size: 40px;
+    text-align: center;
+    /* color: #797979; */
+    color: black;
+    font-weight: bold;
+}
+
+.line {
+    width: 7%;
+    height: 2px;
+    background-color: #20c997;
+    text-align: center;
+    margin: auto;
+}
+/* End Components */
+
+ /*______________________ Start About Me  Section 2  _____________________*/
+
+.line {
+    width: 7%;
+    height: 2px;
+    background-color: #20c997;
+    text-align: center;
+    margin: auto;
+}
+
+.about{
+    margin: 50px;
+ }
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+ }
+
+.about-text {
+    margin-top: 10px;
+    margin: 30px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-us {
+    margin: 50px;
+    padding: 20px 30px;
+    font-size: large;
+
+}
+
+.about-us .name {
+    display: flex;
+    padding: 7px;
+    margin: 7px;
+    border-bottom: 1px solid #ccc;
+}
+
+.about-us .email {
+    display: flex;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.email span {
+    color: #20c997;
+}
+
+.about-us .Age {
+    display: flex;
+    padding: 7px;
+    margin: 7px;
+    border-bottom: 1px solid #ccc;
+}
+
+.about-us .from {
+    display: flex;
+    padding: 7px;
+    margin: 7px;
+    border-bottom: 1px solid #ccc;
+}
+
+.button button {
+    padding: 20px;
+    margin: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #20c997;
+    color: white;
+    text-transform: uppercase;
+}
+
+.member {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
+    font-size: 30px;
+}
+
+.member .experiance {
+    color: #5c6a73;
+}
+/* media xs */
+@media all and (max-width: 576px) {
+    .about-content,
+    .member
+    .about-us {
+        width: 100%;
+    }
+}
+
+@media all and (min-width:576px) and (max-width:767px) {
+    .about-content,
+    .member
+    .about-us {
+        width: 50%;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:991px) {
+    .about-content,
+    .member
+    .about-us {
+        width: 33.333%;
+        
+    }
+}
+
+@media all and (min-width:992px) and (max-width:1199px) {
+    .about-content,
+    .member
+    .about-us {
+    width: 33.333%;
+    }
+}
+
+@media all and (min-width:1200px) {
+    .about-content,
+    .member
+    .about-us {
+    width: 100%;
+    }
+} 
+
+ /* End About Me  Section 2  */
+
+ /*______________________ staet Services section 3 _______________________*/
+
+.line {
+    width: 7%;
+    height: 2px;
+    background-color: #20c997;
+    text-align: center;
+    margin: auto;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+}
+
+.Services-content {
+    margin: 50px;
+    padding: 20px;
+}
+
+.Services-content .col {
+    margin: 10px;
+}
+
+.srv-box {
+    margin: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+ .Services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media(min-width:768px) {
+    .Services .Services-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+.Services .srv-box {
+    display: flex;
+}
+
+.Services .srv-box i {
+    margin-right: 50px;
+    color: #20c997;
+}
+
+/* @media(min-width:767px) {
+    .Services .srv-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+} */
+
+
+
+.Services .srv-box h3 {
+    margin-bottom: 30px;
+}
+
+.Services .srv-box p {
+    line-height: 2;
+    color: #777;
+
+}
+
+/*________________________ Start SuMMary Section 4 __________________*/
+
+.containar {
+    width: 90%;
+    margin: auto;
+}
+
+.science-content {
+    margin: 50px;
+    padding: 20px;
+}
+
+.science-content .box3 {
+    margin: 10px;
+}
+
+.coulm {
+    margin: 30px;
+}
+.SuMMary {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.box3 {
+    display: flex;
+}
+
+.box4 {
+    display: flex;
+}
+
+.box5 {
+    display: flex;
+}
+
+.coulm {
+    border: 1px solid ;
+    color: #5c6a73;
+    padding: 30px;
+    margin: 30px;
+}
+
+.science-content .box3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.science-content .box4 .coulm span {
+    background-color: #20c997;
+    color: white;
+    border: none;
+    padding: 3px;
+}
+
+.box4 .coulm h2 {
+    color: black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.box4 .coulm h3 {
+    color: #e67b87;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* skills */
+
+@media (min-width: 992px) {
+    .SuMMary .containar > div {
+        flex-basis: 45%;
+    }
+}
+
+.skills {
+    margin: 0 0 50px;
+    font-weight: bold;
+}
+
+.skills .col {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin:  20px;
+}
+
+.skills .col2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+}
+
+.skills .col3 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+}
+
+.skills .prog-holder {
+    margin-bottom: 20px;
+}
+
+.skills .prog-holder h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.skills .prog-holder .prog {
+    background-color: #e9ecef;
+    height: 15px;
+    width: 600px;
+}
+
+.skills .prog-holder .prog span {
+    width: 90%;
+    height: 100%;
+    background-color: #20c997;
+    display: block;
+    position: relative;
+}
+
+.skills .prog-holder .prog span::before {
+    content: attr(data-Progress);
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: -40px;
+    right: -30px;
+    padding: 4px o;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.skills .prog-holder .prog span::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black transparent transparent;
+    right: -25px;
+    top: -18px;
+
+}
+.layout9 {
+    width: 100%;
+    height: 100%;
+    background-color: black; 
+    opacity: 0.50;
+}
+/*__________________ Start portfolio Section 5 _______________*/
+
+.line {
+    width: 7%;
+    height: 2px;
+    background-color: #20c997;
+    text-align: center;
+    margin: auto;
+}
+
+.left-img , .middle-img , .right-img{
+    width: 33.33%;
+    margin: 0 10px;
+}
+
+.left-img img {
+    width: 100%;
+    border-radius: 4px;
+}
+.middle-img img {
+    width: 100%;
+    border-radius: 4px;
+}
+.right-img img {
+    width: 100%;
+    border-radius: 4px;
+}
+.portfolio-content {
+    display: flex;
+    margin-top: 30px;
+    
+}
+.left-img .uper , .lower {
+    margin: 20px 0;
+}
+.middle-img .upper-mid , .lower-mid {
+    margin-bottom: 20px;
+}
+.right-img .uper-right , .mid-right {
+    margin-bottom: 20px;
+}
+.black-cover {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   
+}
+.hover {
+position: relative;
+overflow: hidden;
+}
+.black-cover:hover {
+    opacity: 0.8;
+}
+.hover:hover .hoverimg {
+    transform: scale(1.02);
+}
+.hoverimg {
+    transition: 0.25s;
+}
+.black-cover-text {
+    color: white;
+    text-align: center;
+}
+    
+
+
+
+
+/*________________ Start testimonial Section 6 _______________*/
+
+.testimonial .Client {
+    margin: 20px;
+}
+
+.Client  {
+    width: 100%;
+    margin: 50px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+     display: flex;
+}
+
+/*____________________ Start Contact Section 7 ________________*/
+
+.line {
+    width: 7%;
+    height: 2px;
+    background-color: #20c997;
+    text-align: center;
+    margin: auto;
+}
+
+.shuffle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+.shuffle .active {
+    color: #1baa80;
+}
+
+.about-section{
+    margin-top: 30px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-section .contact-inf {
+   
+ width: 30%;
+    padding: 30px;
+    text-align: center;
+}
+
+.about-section .contact-inf h3 {
+    font-size: 22px;
+}
+
+.about-section .contact-inf p {
+    font-size: 18px;
+}
+.about-section .contact-inf .box{
+    padding: 10px;
+}
+.about-section .contact-inf .box span{
+    font-size: 18px;
+}
+.about-section .contact-from {
+    width: 70%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-section .contact-from form {
+    width: 100%;
+    text-align: center;
+}
+
+.about-section .contact-from form .input-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.about-section .contact-from form .input-box input {
+    width: 48%;
+    height: 40px;
+}
+
+.about-section .contact-from form textarea {
+    margin-bottom: 15px;
+}
+
+.about-section .contact-from form .submit {
+    padding: 10px 15px;
+    width: 20%;
+    background-color: #20c997;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+}
+.about-section .contact-from form .submit:hover{
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 30%);
+    background-color: #1baa80;
+}
+
+
+/* footer */
+
+.footer span {
+    color: #20c997;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 30px 10px;
+}
